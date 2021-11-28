@@ -1,7 +1,19 @@
 <template>
-  <Tutorial/>
+  <div class="container">
+    <NavBar/>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+
+    }
+  },
+}
 </script>
+
+<style lang="scss" scoped>
+
+</style>

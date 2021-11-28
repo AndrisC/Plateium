@@ -1,0 +1,28 @@
+$primary-color:     #6699CC;
+$primary-color-light:  #94B8DB;
+$primary-color-dark: #476B8F;
+
+$error-color:   #D6262E;
+$succes-color:  #4BB543;
+$warning-color: #FF6600;
+
+$color-gray:        #6F7886;
+$color-gray-light:  #F6F6F6;
+$border-color: #CFCFCF;
+
+$font-color: #030E12;
+$font-color-light: rgba(3, 14, 18, 0.8);
+$font-color-lighter: rgba(3, 14, 18, 0.5);
+
+:export {
+  primaryColor: $primary-color;
+  primaryColorLight: $primary-color-light;
+  primaryColorDark: $primary-color-dark;
+
+  errorColor: $error-color;
+  succesColor: $succes-color;
+  warningColor: $warning-color;
+
+  colorGrey: $color-gray;
+  borderColor: $border-color
+}
