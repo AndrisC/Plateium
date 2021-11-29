@@ -1,5 +1,11 @@
 @import "https://pro.fontawesome.com/releases/v5.1.0/css/all.css";
 
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
 * {
   font-family: Inter;
 }
