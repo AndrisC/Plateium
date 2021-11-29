@@ -44,11 +44,10 @@ html {
 .content {
   width: 100%;
   overflow-y: auto;
-  border-radius: 10px 0 0 10px;
   background: #fff;
 }
 .default-layout {
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 294px);
   width: 100%;
   display: flex;
   background: #fff;
