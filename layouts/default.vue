@@ -9,20 +9,18 @@
       </div>
     </div>
 
+    <Footer></Footer>
+
   </div>
 </template>
 
 <script>
-import NavBar from '~/components/NavBar'
 
 export default {
   data() {
     return {
     }
   },
-  components: {
-    NavBar
-  }
 }
 </script>
 

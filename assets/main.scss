@@ -1,21 +1,21 @@
 h1 {
-  @include responsive-font(8vw, 42px, $jumbo, $jumbo);
+  @include responsive-font(1vw, 36px, $jumbo, $jumbo);
   font-family: Inter;
 }
 h2 {
-  @include responsive-font(5vw, 30px, $heading-1, $heading-1);
+  @include responsive-font(1vw, 28px, $heading-1, $heading-1);
   font-family: Inter;
 }
 h3 {
-  @include responsive-font(4vw, 28px, $heading-2, $heading-2);
+  @include responsive-font(1vw, 24px, $heading-2, $heading-2);
   font-family: Inter;
 }
 h4 {
-  @include responsive-font(3vw, 22px, $heading-3, $heading-3);
+  @include responsive-font(1vw, 20px, $heading-3, $heading-3);
   font-family: Inter;
 }
 h5 {
-  @include responsive-font(2vw, 20px, $heading-4, $heading-4);
+  @include responsive-font(1vw, 18px, $heading-4, $heading-4);
   font-family: Inter;
 }
 p {

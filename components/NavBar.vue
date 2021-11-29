@@ -1,20 +1,20 @@
 <template lang="html">
   <div class="nav-bar">
-    <div class="logo-container">
+    <div @click="$router.push('/')" class="logo-container">
       <h2>Plateium</h2>
     </div>
 
     <div class="navigation-container">
-      <div class="menu-item">
+      <div @click="$router.push('/collection')" class="menu-item">
         <span>Collection</span>
       </div>
-      <div class="menu-item">
+      <div @click="$router.push('/about')" class="menu-item">
         <span>About</span>
       </div>
-      <div class="menu-item border-right">
+      <div @click="$router.push('/contacts')" class="menu-item border-right">
         <span>Contact</span>
       </div>
-      <div class="menu-item">
+      <div @click="$router.push('/login')" class="menu-item">
         <span>Sign in</span>
       </div>
       <div class="menu-item">
@@ -39,7 +39,6 @@ export default {
 .nav-bar {
   height: 64px;
   width: 100%;
-  background: #fff;
   display: flex;
   justify-content: space-between;
   padding: $space-xs;
