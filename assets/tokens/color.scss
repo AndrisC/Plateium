@@ -1,6 +1,17 @@
-$primary-color:     #6699CC;
-$primary-color-light:  #94B8DB;
-$primary-color-dark: #476B8F;
+$primary-color:         #6699CC;
+$primary-color-light:   #94B8DB;
+$primary-color-dark:    #476B8F;
+
+$secondary-color:       #66CCCC;
+
+$secondary-dark-100:    #5CB8B8;
+$secondary-dark-200:    #52A3A3;
+$secondary-dark-300:    #478F8F;
+
+$secondary-light-800:   #E0F5F5;
+$secondary-light-700:   #D1F0F0;
+$secondary-light-600:   #C2EBEB;
+
 
 $error-color:   #D6262E;
 $succes-color:  #4BB543;
@@ -8,7 +19,7 @@ $warning-color: #FF6600;
 
 $color-gray:        #6F7886;
 $color-gray-light:  #F6F6F6;
-$border-color: #CFCFCF;
+$border-color: #C5C9CF;
 
 $font-color: #030E12;
 $font-color-light: rgba(3, 14, 18, 0.8);
@@ -24,5 +35,5 @@ $font-color-lighter: rgba(3, 14, 18, 0.5);
   warningColor: $warning-color;
 
   colorGrey: $color-gray;
-  borderColor: $border-color
+  borderColor: $border-color;
 }

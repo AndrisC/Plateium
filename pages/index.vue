@@ -90,10 +90,12 @@
     </div>
 
     <div class="newsletter-container">
-      <h1>Join our newsletter!</h1>
+      <h2>Join our newsletter!</h2>
 
       <div class="email-container">
+        <plt-input placeholder="Email" class="email-input" title="Your email address"/>
 
+        <plt-button>Subscribe</plt-button>
       </div>
 
       <!-- ide checkbox -->
@@ -222,5 +224,17 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: $space-l auto;
+
+  h2 {
+    margin-bottom: $space-s;
+  }
+}
+.email-container {
+  display: flex;
+  align-items: flex-end;
+
+  .email-input {
+    margin-right: $space-m;
+  }
 }
 </style>

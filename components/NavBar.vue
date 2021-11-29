@@ -60,7 +60,7 @@ export default {
   cursor: pointer;
 }
 .border-right {
-  padding: 0 $space-m;
+  padding: 0 $space-m 0 0;
   border-right: 2px solid $font-color;
 }
 
