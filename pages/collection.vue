@@ -77,105 +77,135 @@ export default {
           name: 'Leaves',
           artist: 'Alexey Demidov',
           img: 'images/pexels-alexey-demidov-9727475-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Abandoned ship',
           artist: 'Alina k',
           img: 'images/pexels-vyacheslav-bobin-9751579-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Foresty beach',
           artist: 'Alina k',
           img: 'images/pexels-skyler-sion-9881700-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Car lines',
           artist: 'Alina k',
           img: 'images/pexels-alina-k-9866828-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Amusement park',
           artist: 'Alyssa Rose',
           img: 'images/pexels-alyssa-rose-9395308-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Snowy mountains',
           artist: 'Anastasia R',
           img: 'images/pexels-anastasia-r-9904154-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Sunrise at the barn',
           artist: 'Andrew Scharman',
           img: 'images/pexels-andrew-scharman-9702010-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'Fern',
           artist: 'Anna',
           img: 'images/pexels-anna-3972650-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-anna-kozlova-10162708-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-anna-rye-9092469-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-yaroslav-chaadaev-9654126-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-yew-hui-tan-9038269-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-yew-hui-tan-9038606-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-zhuravleva-anastasia-9985770-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
         {
           _id: '9727475',
           name: 'City from below',
           artist: 'Anna Kozlova',
           img: 'images/pexels-артём-н-9733511-min.jpg',
-          price: '$19.99'
+          price: '$19.99',
+          rating: 4,
+          stock: 2,
         },
       ]
     }

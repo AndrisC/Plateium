@@ -4,9 +4,15 @@
       <div class="image-carousel">
         <plt-carousel/>
       </div>
+
       <div class="information-container">
         <h2 class="welcome">Welcome to Plateium</h2>
+
         <h1>Find the best photos or designs for your house.</h1>
+
+        <div class="button-container">
+          <plt-button @click="$router.push('/collection')">Explore collection</plt-button>
+        </div>
       </div>
     </div>
 
@@ -16,7 +22,7 @@
       </div>
 
       <div class="categories">
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-alexey-demidov-9727475-min.jpg" alt="">
           </div>
@@ -24,7 +30,7 @@
           <span class="category-name">Nature</span>
         </div>
 
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-anna-kozlova-10162708-min.jpg" alt="">
           </div>
@@ -32,7 +38,7 @@
           <span class="category-name">City</span>
         </div>
 
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-guryan-9579125-min.jpg" alt="">
           </div>
@@ -40,7 +46,7 @@
           <span class="category-name">Animals</span>
         </div>
 
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-евгения-егорова-9049274-min.jpg" alt="">
           </div>
@@ -48,7 +54,7 @@
           <span class="category-name">Cars</span>
         </div>
 
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-thais-cordeiro-3873664-min.jpg" alt="">
           </div>
@@ -56,7 +62,7 @@
           <span class="category-name">Buildings</span>
         </div>
 
-        <div class="one-category">
+        <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
             <img src="~/static/images/pexels-skyler-sion-9808227-min.jpg" alt="">
           </div>
@@ -64,7 +70,7 @@
           <span class="category-name">Sea</span>
         </div>
 
-        <div class="one-category last-category">
+        <div @click="$router.push('/collection')" class="one-category last-category">
           <div class="category-image">
             <img src="~/static/images/pexels-denis-trushtin-9855417-min.jpg" alt="">
           </div>
@@ -143,6 +149,7 @@ export default {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+
 }
 .last-category {
   margin-right: 0;
@@ -153,6 +160,11 @@ export default {
   border-radius: $radius-default;
   overflow: hidden;
   box-shadow: $box-shadow;
+  transition: all .2s;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px 2px rgba(28, 38, 42, 0.45);
+  }
 
   img {
     object-fit: cover;
@@ -161,12 +173,13 @@ export default {
     height: 100%;
   }
 }
-.welcome {
-  margin-bottom: $space-l;
-}
 .information-container {
   text-align: right;
   width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: $space-m;
 }
 .category-name {
   margin-top: $space-xs;
