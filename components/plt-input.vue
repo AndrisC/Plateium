@@ -91,9 +91,9 @@ export default {
   margin: $space-xs 0 0 0;
   transition: all .3s;
   &:focus {
-    border: 2px solid $primary-color;
+    border: 2px solid $secondary-dark-200;
     background: #fff;
-    box-shadow: 0px 0px 3px rgba($primary-color, .5);
+    box-shadow: 0px 0px 3px rgba($secondary-color, .5);
   }
 }
 textarea {

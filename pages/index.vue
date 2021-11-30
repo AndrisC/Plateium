@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-container">
       <div class="image-carousel">
-        <img src="~/static/images/pexels-alexey-demidov-9727475-min.jpg" alt="">
+        <plt-carousel/>
       </div>
       <div class="information-container">
         <h2 class="welcome">Welcome to Plateium</h2>
@@ -125,20 +125,6 @@ export default {
   // align-items: center;
   padding: $space-m;
   justify-content: center;
-}
-.image-carousel {
-  width: 220px;
-  height: 280px;
-  border-radius: $radius-default;
-  overflow: hidden;
-  margin-right: $space-xxl;
-
-  img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-  }
 }
 .categories-container {
   padding: $space-l;

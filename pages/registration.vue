@@ -7,23 +7,20 @@
 
       <div class="login-container">
         <div class="title">
-          <h3>Login</h3>
+          <h3>Registration</h3>
         </div>
 
         <div class="input-container">
           <plt-input title="E-mail address"/>
           <plt-input title="Password"/>
-        </div>
-
-        <div class="checkbox-container">
-          <plt-checkbox label="Remember me"/>
+          <plt-input title="Re-enter password"/>
         </div>
 
         <div class="button-container">
-          <plt-button @click="$router.push('/')" class="plt-button">Login</plt-button>
+          <plt-button @click="$router.push('/')" class="plt-button">Create account</plt-button>
 
-          <p>Don't have an account?</p>
-          <plt-button @click="$router.push('/registration')" class="plt-button" type="outlined">Registration</plt-button>
+          <p>Already have an account?</p>
+          <plt-button @click="$router.push('/login')" class="plt-button" type="outlined">Login</plt-button>
         </div>
       </div>
     </div>

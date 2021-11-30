@@ -4,6 +4,7 @@
     :class="{
       'contained': type == 'contained',
       'secondary': type == 'secondary',
+      'outlined': type == 'outlined',
     }"
     v-bind="$attrs"
     v-on="$listeners"
@@ -31,7 +32,7 @@ button {
   position: relative;
   padding: $space-xs $space-m;
   overflow: hidden;
-  border-radius: $radius-small;
+  border-radius: $radius-default;
   border: none;
   cursor: pointer;
   outline: none;
@@ -53,7 +54,6 @@ button {
   background: $secondary-color;
   color: #fff;
 }
-
 .secondary {
   color: $secondary-dark-200;
   background: inherit;
@@ -67,6 +67,22 @@ button {
   }
   &:active {
     background: $secondary-light-600;
+  }
+}
+.outlined {
+  color: $secondary-dark-200;
+  border: 2px solid $secondary-dark-200;
+  background: inherit;
+  &:hover {
+    background: $secondary-light-800;
+    color: $secondary-dark-300;
+  }
+  &:focus {
+    background: $secondary-light-800;
+    color: $secondary-dark-300;
+  }
+  &:active {
+    background: $secondary-light-700;
   }
 }
 button:disabled {
