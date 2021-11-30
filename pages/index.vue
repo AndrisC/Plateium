@@ -92,7 +92,7 @@
     </div>
 
     <div class="ratings-container">
-
+      <plt-rating v-for="rating in ratings" :rating="rating"/>
     </div>
 
     <div class="newsletter-container">
@@ -113,6 +113,29 @@
 export default {
   data() {
     return {
+      ratings: [
+        {
+          img: 'images/pexels-zhuravleva-anastasia-9985770-min.jpg',
+          name: 'Ocean waves',
+          rating: 4,
+          customer: 'Jozefo Reut',
+          comment: 'Ut aliquam purus sit amet luctus magna. In hac ',
+        },
+        {
+          img: 'images/pexels-skyler-sion-9881700-min.jpg',
+          name: 'Sailing on the open sea',
+          rating: 4,
+          customer: 'Saeed Jonatan',
+          comment: 'Sapien eget mi proin sed. Pharetra sit amet aliquam.',
+        },
+        {
+          img: 'images/pexels-kira-schwarz-10157052-min.jpg',
+          name: 'Fly',
+          rating: 4,
+          customer: 'JUzziel Irvin',
+          comment: 'Odio pellentesque diam volutpat commodo.',
+        }
+      ],
     }
   },
 }
@@ -121,11 +144,14 @@ export default {
 <style lang="scss" scoped>
 .container {
   height: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header-container {
   background: $primary-color;
   height: 370px;
+  width: 100%;
   display: flex;
   padding: $space-m;
   justify-content: center;
@@ -185,8 +211,8 @@ export default {
   margin-top: $space-xs;
 }
 .middle-information-container {
-  border-top: 2px solid $color-gray-light;
-  border-bottom: 2px solid $color-gray-light;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   padding: $space-l $space-m;
   display: flex;
   justify-content: center;
@@ -217,8 +243,8 @@ export default {
   border-radius: $radius-default;
   box-shadow: $box-shadow;
   padding: $space-l;
-  max-width: 90%;
-  max-width: 950px;
+  width: 80%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,6 +253,13 @@ export default {
   h2 {
     margin-bottom: $space-s;
   }
+}
+.ratings-container {
+  max-width: 1000px;
+  display: flex;
+  grid-gap: $space-m;
+  padding: $space-l 0 $space-xl 0;
+  border-bottom: 1px solid $border-color;
 }
 .email-container {
   display: flex;
