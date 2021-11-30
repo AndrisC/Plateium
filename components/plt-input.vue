@@ -51,7 +51,7 @@ export default {
 
 <style lang="scss" scoped>
 ::placeholder {
-  opacity: 0.2;
+  color: $font-color-lighter;
 }
 .flex-wrapper {
   display: flex;
