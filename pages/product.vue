@@ -179,7 +179,7 @@ export default {
   },
   methods: {
     addToCart(product) {
-      //add to local storage
+      localStorage.setItem('cartItem' ,this.$route.params.product.img)
     }
   }
 }

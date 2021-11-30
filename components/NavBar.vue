@@ -17,16 +17,24 @@
       <div @click="$router.push('/login')" class="menu-item">
         <span>Sign in</span>
       </div>
-      <div class="menu-item">
+      <div @click="cartOpen = !cartOpen" class="menu-item">
         <span>Cart</span>
-        <span>(0)</span>
+        <span>(2)</span>
       </div>
+      <transition name="slide-fade">
+        <plt-cart v-if="cartOpen"/>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      cartOpen: false,
+    }
+  },
 }
 </script>
 
@@ -53,10 +61,20 @@ export default {
   font-weight: 500;
   margin: 0 $space-s;
   cursor: pointer;
+  user-select: none;
 }
 .border-right {
   padding: 0 $space-m 0 0;
   border-right: 2px solid $font-color;
 }
-
+.slide-fade-enter-active {
+  transition: all .1s ease;
+}
+.slide-fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateY(-30px);
+  opacity: 0;
+}
 </style>
