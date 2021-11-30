@@ -47,7 +47,7 @@ html {
   background: #fff;
 }
 .default-layout {
-  min-height: calc(100vh - 294px);
+  min-height: calc(100vh - 64px);
   width: 100%;
   display: flex;
   background: #fff;

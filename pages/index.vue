@@ -80,7 +80,7 @@
       </div>
 
       <div class="middle-text">
-        <h1>Your wall, your choice</h1>
+        <h1 class="middle-text-title">Your wall, your choice</h1>
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
       </div>
     </div>
@@ -98,7 +98,7 @@
         <plt-button>Subscribe</plt-button>
       </div>
 
-      <!-- ide checkbox -->
+      <plt-checkbox label="Yes, I would like to recieve email with newsletters"/>
     </div>
   </div>
 </template>
@@ -107,7 +107,6 @@
 export default {
   data() {
     return {
-
     }
   },
 }
@@ -122,7 +121,6 @@ export default {
   background: $primary-color;
   height: 370px;
   display: flex;
-  // align-items: center;
   padding: $space-m;
   justify-content: center;
 }
@@ -199,9 +197,11 @@ export default {
 .middle-text {
   width: 50%;
 }
+.middle-text-title {
+  margin-bottom: $space-l;
+}
 .newsletter-container {
   border-radius: $radius-default;
-  height: 250px;
   box-shadow: $box-shadow;
   padding: $space-l;
   max-width: 90%;

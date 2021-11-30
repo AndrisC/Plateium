@@ -21,7 +21,7 @@ export default {
     computedListeners() {
       let lists = {...this.$listeners}
 
-      delete lists.change,
+      delete lists.change
       lists.input = event => {
         this.$emit("input", event.target.checked)
         this.$emit('change', event.target.checked)

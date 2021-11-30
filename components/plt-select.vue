@@ -63,12 +63,12 @@ export default {
   flex-wrap: nowrap;
   justify-content: space-between;
   max-width: 400px;
-  margin: $space-s $space-m $space-s 0;
+  margin: $space-s 0 $space-s 0;
 
   label {
     transition: all .3s;
     font-size: $paragraph-small;
-    color: $font-color;
+    color: $font-color-light;
     font-weight: 400;
     display: flex;
     flex-wrap: nowrap;

@@ -1,37 +1,28 @@
 <template>
   <div class="container">
-    <div class="login-wrapper">
-      <div class="image-container">
-        <img src="~/static/images/termek-mockup-login.jpg" alt="">
-      </div>
+    <div class="image-container">
+      <img :src="product.img" alt="">
+    </div>
 
-      <div class="login-container">
-        <div class="title">
-          <h3>Login</h3>
-        </div>
+    <div class="description-container">
+      <p class="product-name">{{product.name}}</p>
+      <p class="artist">By {{product.artist}}</p>
+    </div>
 
-        <div class="input-container">
-          <plt-input title="E-mail address"/>
-          <plt-input title="Password"/>
-        </div>
-
-        <div class="checkbox-container">
-          <plt-checkbox label="Remember me"/>
-        </div>
-
-        <div class="button-container">
-          <plt-button @click="$router.push('/')" class="plt-button">Login</plt-button>
-
-          <p>Don't have an account?</p>
-          <plt-button @click="$router.push('/registration')" class="plt-button" type="outlined">Registration</plt-button>
-        </div>
-      </div>
+    <div class="button-container">
+      <plt-button class="plt-button" type="outlined">Details/Buy</plt-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    product: {
+      type: Object,
+      default: () => {}
+    },
+  },
   data: () =>  ({
 
   })
@@ -39,5 +30,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  padding: 0!important;
+  display: flex;
+  flex-direction: column;
+  width: 100%!important;
+}
+.image-container {
+  width: 100%;
+  height: 300px;
+  border-radius: $radius-default;
+  overflow: hidden;
+  margin-bottom: $space-xs;
 
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.description-container {
+  margin-bottom: $space-s;
+}
+.product-name {
+  font-weight: 500;
+  margin-bottom: $space-xxs;
+}
+.artist {
+  color: $font-color-lighter;
+  font-size: $paragraph-tiny;
+}
+.plt-button {
+  width: 100%;
+}
 </style>

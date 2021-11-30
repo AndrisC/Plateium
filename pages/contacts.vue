@@ -68,6 +68,7 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-top: -290px;
+  margin-bottom: $space-m;
 }
 .outter-shell {
   display: flex;
