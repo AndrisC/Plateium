@@ -83,7 +83,7 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'Abandoned ship',
+          name: 'Lightning',
           artist: 'Alina k',
           img: 'images/pexels-vyacheslav-bobin-9751579-min.jpg',
           price: '$19.99',
@@ -92,8 +92,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'Foresty beach',
-          artist: 'Alina k',
+          name: 'Sailing on the open sea',
+          artist: 'Skyler Sion',
           img: 'images/pexels-skyler-sion-9881700-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -155,8 +155,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Birds',
+          artist: 'Anna Rye',
           img: 'images/pexels-anna-rye-9092469-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -164,8 +164,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Forest birdview',
+          artist: 'Yaroslav Chaadaev',
           img: 'images/pexels-yaroslav-chaadaev-9654126-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -173,8 +173,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Open window',
+          artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038269-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -182,8 +182,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Pink house',
+          artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038606-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -191,8 +191,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Ocean waves',
+          artist: 'Zhuravleva Anastasia',
           img: 'images/pexels-zhuravleva-anastasia-9985770-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -200,8 +200,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Look up',
+          artist: 'Aртём H',
           img: 'images/pexels-артём-н-9733511-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -230,6 +230,7 @@ export default {
   width: 80%;
   max-width: 1300px;
   margin-top: -$space-s;
+  margin-bottom: $space-xxl;
   padding-left: $space-l;
 }
 .search-area {

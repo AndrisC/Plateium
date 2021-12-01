@@ -106,8 +106,8 @@ export default {
       products: [
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Forest birdview',
+          artist: 'Yaroslav Chaadaev',
           img: 'images/pexels-yaroslav-chaadaev-9654126-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -115,8 +115,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Open window',
+          artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038269-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -124,8 +124,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Pink house',
+          artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038606-min.jpg',
           price: '$19.99',
           rating: 4,
@@ -142,8 +142,8 @@ export default {
         },
         {
           _id: '9727475',
-          name: 'City from below',
-          artist: 'Anna Kozlova',
+          name: 'Look up',
+          artist: 'Aртём H',
           img: 'images/pexels-артём-н-9733511-min.jpg',
           price: '$19.99',
           rating: 4,

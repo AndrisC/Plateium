@@ -48,7 +48,11 @@ export default {
   }
 }
 .description-container {
+  width: 100%;
   margin-bottom: $space-s;
+}
+.button-container {
+  width: 100%;
 }
 .product-name {
   font-weight: 500;
