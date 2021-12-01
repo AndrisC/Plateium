@@ -43,7 +43,17 @@
             </div>
 
             <div class="quantity-wrapper">
+              <button @click="decQuantity(product)" class="negative quantity-button left" type="button" name="button">
+                <i class="fas fa-minus"></i>
+              </button>
 
+              <div class="quantity">
+                <span>{{product.quantity}}</span>
+              </div>
+
+              <button @click="product.quantity = product.quantity + 1" class="positive quantity-button right" type="button" name="button">
+                <i class="fas fa-plus"></i>
+              </button>
             </div>
           </div>
 
@@ -110,6 +120,13 @@ export default {
   mounted() {
     if(!process.client) return;
     let savedData = localStorage.getItem("cartItem")
+  },
+  methods: {
+    decQuantity(prod) {
+      if (prod.quantity > 1) {
+        prod.quantity = prod.quantity - 1
+      }
+    }
   }
 }
 </script>
@@ -212,5 +229,42 @@ export default {
   display: flex;
   justify-content: flex-end;
   grid-gap: $space-m;
+}
+.quantity-wrapper {
+  display: flex;
+  margin-top: $space-m;
+  align-items: center;
+}
+.quantity-button {
+  border: 2px solid $border-color;
+  color: $font-color-lighter;
+  cursor: pointer;
+  background: #fff;
+  height: 40px;
+  outline: none;
+  width: 38px;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $font-color-lighter;
+    color: $font-color-light;
+  }
+}
+.left {
+  border-top-left-radius: $radius-default;
+  border-bottom-left-radius: $radius-default;
+}
+.right {
+  border-top-right-radius: $radius-default;
+  border-bottom-right-radius: $radius-default;
+}
+.quantity {
+  width: 38px;
+  height: 40px;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

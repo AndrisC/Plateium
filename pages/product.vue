@@ -57,7 +57,17 @@
           </div>
 
           <div class="quantity-wrapper">
+            <button @click="decQuantity()" class="negative quantity-button left" type="button" name="button">
+              <i class="fas fa-minus"></i>
+            </button>
 
+            <div class="quantity">
+              <span>{{quantity}}</span>
+            </div>
+
+            <button @click="quantity = quantity + 1" class="positive quantity-button right" type="button" name="button">
+              <i class="fas fa-plus"></i>
+            </button>
           </div>
         </div>
 
@@ -174,12 +184,17 @@ export default {
       ],
       selectedSize: {},
       selectedMaterial: {},
-      quantity: null
+      quantity: 1
     }
   },
   methods: {
     addToCart(product) {
       localStorage.setItem('cartItem' ,this.$route.params.product.img)
+    },
+    decQuantity() {
+      if (this.quantity > 1) {
+        this.quantity = this.quantity - 1
+      }
     }
   }
 }
@@ -276,5 +291,42 @@ export default {
   display: flex;
   grid-gap: $space-m;
   padding: $space-l 0 $space-xl 0;
+}
+.quantity-wrapper {
+  display: flex;
+  margin-top: $space-m;
+  align-items: center;
+}
+.quantity-button {
+  border: 2px solid $border-color;
+  color: $font-color-lighter;
+  cursor: pointer;
+  background: #fff;
+  height: 40px;
+  outline: none;
+  width: 38px;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $font-color-lighter;
+    color: $font-color-light;
+  }
+}
+.left {
+  border-top-left-radius: $radius-default;
+  border-bottom-left-radius: $radius-default;
+}
+.right {
+  border-top-right-radius: $radius-default;
+  border-bottom-right-radius: $radius-default;
+}
+.quantity {
+  width: 38px;
+  height: 40px;
+  border-top: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

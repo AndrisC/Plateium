@@ -18,8 +18,18 @@
           </div>
 
           <div class="bottom-info">
-            <div class="quantity-container">
-              quantity: 1
+            <div class="quantity-wrapper">
+              <button @click="decQuantity(product)" class="negative quantity-button" type="button" name="button">
+                <i class="fas fa-minus"></i>
+              </button>
+
+              <div class="quantity">
+                <span>{{product.quantity}}</span>
+              </div>
+
+              <button @click="product.quantity = product.quantity + 1" class="positive quantity-button" type="button" name="button">
+                <i class="fas fa-plus"></i>
+              </button>
             </div>
 
             <div class="price-container">
@@ -71,6 +81,13 @@ export default {
   mounted() {
     if(!process.client) return;
     let savedData = localStorage.getItem("cartItem")
+  },
+  methods: {
+    decQuantity(prod) {
+      if (prod.quantity > 1) {
+        prod.quantity = prod.quantity - 1
+      }
+    }
   }
 }
 </script>
@@ -146,5 +163,39 @@ export default {
   display: flex;
   justify-content: flex-end;
   margin-top: $space-m;
+}
+.quantity-wrapper {
+  display: flex;
+  margin-top: $space-m;
+  align-items: center;
+  grid-gap: $space-xs;
+}
+.quantity-button {
+  border: 2px solid $border-color;
+  border-radius: $radius-default;
+  color: $font-color-lighter;
+  cursor: pointer;
+  background: #fff;
+  font-size: 11px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  width: 21px;
+  outline: none;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $font-color-lighter;
+    color: $font-color-light;
+  }
+}
+.quantity {
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: $paragraph-small;
+  color: $font-color-light;
 }
 </style>
