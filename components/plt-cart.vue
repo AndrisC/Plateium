@@ -37,7 +37,7 @@
     </div>
 
     <div class="button-container">
-      <plt-button @click="$router.push('/cart')">To Cart</plt-button>
+      <plt-button @click="$router.push('/cart'), $emit('close')">To Cart</plt-button>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="nav-bar">
+  <div class="nav-bar" @click="close($event)">
     <div @click="$router.push('/')" class="logo-container">
       <h2>Plateium</h2>
     </div>
@@ -17,13 +17,16 @@
       <div @click="$router.push('/login')" class="menu-item">
         <span>Sign in</span>
       </div>
-      <div @click="cartOpen = !cartOpen" class="menu-item cart-container">
-        <span>Cart</span>
-        <span>(2)</span>
+      <div ref="cart" class="menu-item cart-container">
+        <div @click="cartOpen = !cartOpen">
+          <span>Cart</span>
+          <span>(2)</span>
+        </div>
+
+        <transition name="slide-fade">
+          <plt-cart @close="cartOpen = false" v-if="cartOpen"/>
+        </transition>
       </div>
-      <transition name="slide-fade">
-        <plt-cart v-if="cartOpen"/>
-      </transition>
     </div>
   </div>
 </template>
@@ -35,6 +38,21 @@ export default {
       cartOpen: false,
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("click", this.close)
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener("click", this.close)
+  },
+  methods: {
+    close(e) {
+      if (!this.$refs.cart.contains(e.target) && this.cartOpen) {
+        this.cartOpen = false
+      }
+    },
+  }
 }
 </script>
 
