@@ -17,7 +17,7 @@
       <div @click="$router.push('/login')" class="menu-item">
         <span>Sign in</span>
       </div>
-      <div @click="cartOpen = !cartOpen" class="menu-item">
+      <div @click="cartOpen = !cartOpen" class="menu-item cart-container">
         <span>Cart</span>
         <span>(2)</span>
       </div>
@@ -76,5 +76,8 @@ export default {
 .slide-fade-enter, .slide-fade-leave-to{
   transform: translateY(-30px);
   opacity: 0;
+}
+.cart-container {
+  font-weight: 600;
 }
 </style>
