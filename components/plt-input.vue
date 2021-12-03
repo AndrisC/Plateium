@@ -10,7 +10,6 @@
       ref="field"
       v-bind="computedBinds"
       class="field"
-      @focus="scrollIntoView()"
     />
   </div>
 </template>
@@ -38,14 +37,6 @@ export default {
       return obj
     }
   },
-  methods: {
-    scrollIntoView() {
-      if( !this.$props.scrollTofield ) return
-
-      let tag = this.$refs.field
-      tag.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
-    },
-  }
 }
 </script>
 
@@ -90,6 +81,7 @@ export default {
   font-size: $paragraph;
   margin: $space-xs 0 0 0;
   transition: all .3s;
+  
   &:focus {
     border: 2px solid $secondary-dark-200;
     background: #fff;

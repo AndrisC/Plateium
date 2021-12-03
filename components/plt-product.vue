@@ -10,7 +10,12 @@
     </div>
 
     <div class="button-container">
-      <plt-button @click="$router.push({name: 'product', params: {product: product}})" class="plt-button" type="outlined">Details/Buy</plt-button>
+      <plt-button
+        @click="$router.push({name: 'product', params: {product: product}})"
+        class="plt-button" type="outlined"
+      >
+        Details/Buy
+      </plt-button>
     </div>
   </div>
 </template>
@@ -19,8 +24,8 @@
 export default {
   props: {
     product: {
-      type: Object,
-      default: () => {}
+      type: Array,
+      default: () => [],
     },
   },
 }

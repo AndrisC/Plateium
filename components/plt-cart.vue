@@ -148,6 +148,7 @@ export default {
 .bottom-info {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .quantity-container {
   font-size: $paragraph-small;

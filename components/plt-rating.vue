@@ -25,7 +25,8 @@
 export default {
   props: {
     rating: {
-      type: Object,
+      type: Array,
+      default: () => [],
     },
   },
 }
