@@ -123,7 +123,7 @@ export default {
         },
         {
           img: 'images/pexels-skyler-sion-9881700-min.jpg',
-          name: 'Sailing on the open sea',
+          name: 'Sailing',
           rating: 4,
           customer: 'Saeed Jonatan',
           comment: 'Sapien eget mi proin sed. Pharetra sit amet aliquam.',

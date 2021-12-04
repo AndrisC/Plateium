@@ -96,7 +96,7 @@ export default {
         },
         {
           _id: '9881700',
-          name: 'Sailing on the open sea',
+          name: 'Sailing',
           artist: 'Skyler Sion',
           img: 'images/pexels-skyler-sion-9881700-min.jpg',
           price: '$19.99',

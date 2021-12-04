@@ -10,7 +10,7 @@
       </div>
 
       <div class="rating">
-        <i v-for="i in 4" class="far fa-star"></i>
+        <i v-for="i in 5" class="far fa-star"></i>
       </div>
 
       <div class="review">

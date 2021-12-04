@@ -12,7 +12,10 @@
           <div class="contacts">
             <h3>Contact us!</h3>
 
-            <p class="contact-text">Dui vivamus arcu felis bibendum. Diam quam nulla porttitor massa id neque.</p>
+            <p class="contact-text">
+              Hungary,
+              8888, Plateium city, example street address
+            </p>
 
             <div class="addresses">
               <div class="email">
