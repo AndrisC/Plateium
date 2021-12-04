@@ -25,15 +25,15 @@
       </div>
 
       <div @click="$router.push('/')" class="menu-item">
-        <span>Artists</span>
+        <a href="https://www.pexels.com/hu-hu/" target="_blank">Artists</a>
       </div>
-      <div @click="$router.push('/')" class="menu-item">
-        <span>Source of images</span>
+      <div class="menu-item">
+        <a href="https://www.pexels.com/hu-hu/" target="_blank">Source of images</a>
       </div>
     </div>
 
     <div class="shop-container">
-      <div class="footer-title">
+      <div @click="$router.push('/contacts')" class="footer-title">
         <span>Contacts</span>
       </div>
 
@@ -72,5 +72,10 @@ export default {
   color: $font-color-light;
   margin-bottom: $space-xs;
   cursor: pointer;
+
+  a {
+    color: $font-color-light;
+    text-decoration: none;
+  }
 }
 </style>

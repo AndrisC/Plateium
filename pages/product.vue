@@ -89,12 +89,12 @@
       </div>
 
       <div class="products">
-        <plt-product v-for="product in products" :product="product"/>
+        <plt-product v-for="product in products" :key="product._id" :product="product"/>
       </div>
     </div>
 
     <div class="ratings-container">
-      <plt-rating v-for="rating in ratings" :rating="rating"/>
+      <plt-rating v-for="rating in ratings" :key="rating.name" :rating="rating"/>
     </div>
   </div>
 </template>
@@ -105,7 +105,7 @@ export default {
     return {
       products: [
         {
-          _id: '9727475',
+          _id: '9654126',
           name: 'Forest birdview',
           artist: 'Yaroslav Chaadaev',
           img: 'images/pexels-yaroslav-chaadaev-9654126-min.jpg',
@@ -114,7 +114,7 @@ export default {
           stock: 2,
         },
         {
-          _id: '9727475',
+          _id: '9038269',
           name: 'Open window',
           artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038269-min.jpg',
@@ -123,7 +123,7 @@ export default {
           stock: 2,
         },
         {
-          _id: '9727475',
+          _id: '9038606',
           name: 'Pink house',
           artist: 'Yew Hui Tan',
           img: 'images/pexels-yew-hui-tan-9038606-min.jpg',
@@ -132,7 +132,7 @@ export default {
           stock: 2,
         },
         {
-          _id: '9727475',
+          _id: '9985770',
           name: 'Ocean waves',
           artist: 'Zhuravleva Anastasia',
           img: 'images/pexels-zhuravleva-anastasia-9985770-min.jpg',
@@ -141,7 +141,7 @@ export default {
           stock: 2,
         },
         {
-          _id: '9727475',
+          _id: '9733511',
           name: 'Look up',
           artist: 'Aртём H',
           img: 'images/pexels-артём-н-9733511-min.jpg',

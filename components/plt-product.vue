@@ -24,8 +24,8 @@
 export default {
   props: {
     product: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
     },
   },
 }

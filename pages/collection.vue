@@ -46,7 +46,7 @@
     <div
       v-for="product in products"
       class="one-product"
-      :key="product"
+      :key="product._id"
     >
       <plt-product :product="product"/>
     </div>

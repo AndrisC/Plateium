@@ -5,7 +5,7 @@
     </div>
 
     <div class="product-container">
-      <div v-for="product in products" class="one-product">
+      <div v-for="product in products" :key="product._id" class="one-product">
         <div class="product-image">
           <img :src="product.img" alt="">
         </div>
@@ -58,7 +58,7 @@ export default {
     return {
       products: [
         {
-          _id: '9727475',
+          _id: '10057659',
           name: 'Misty day',
           img: 'images/pexels-simon-berger-10057659-min.jpg',
           price: '$19.99',

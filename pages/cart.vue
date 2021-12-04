@@ -7,7 +7,7 @@
         <h4>Your cart</h4>
       </div>
 
-      <div v-for="product in products" class="one-product">
+      <div v-for="(product, index) in products" :key="product._id" class="one-product">
         <div class="big-image">
           <img :src="product.img" alt="">
         </div>
@@ -23,7 +23,7 @@
               :show-labels="false"
               :options="sizeOptions"
               track-by="id"
-              v-model="selectedSize"
+              v-model="selectedSize[index]"
               label="name"
               title="Select Size"
               placeholder="Size"
@@ -34,7 +34,7 @@
               :show-labels="false"
               :options="matOptions"
               track-by="id"
-              v-model="selectedMaterial"
+              v-model="selectedMaterial[index]"
               label="name"
               title="Select material"
               placeholder="material"
@@ -113,8 +113,14 @@ export default {
         {name: 'Aluminium', id: 0},
         {name: 'Stainless steel', id: 1},
       ],
-      selectedSize: {name: 'XL - 120cm x 60cm', id: 2},
-      selectedMaterial: {name: 'Aluminium', id: 0},
+      selectedSize: [
+        {name: 'XL - 120cm x 60cm', id: 0},
+        {name: 'XL - 120cm x 60cm', id: 1},
+      ],
+      selectedMaterial: [
+        {name: 'Aluminium', id: 0},
+        {name: 'Aluminium', id: 1},
+      ],
     }
   },
   mounted() {
