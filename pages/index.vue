@@ -48,7 +48,7 @@
 
         <div @click="$router.push('/collection')" class="one-category">
           <div class="category-image">
-            <img src="~/static/images/pexels-евгения-егорова-9049274-min.jpg" alt="">
+            <img src="~/static/images/pexels-eb-er-9049274-min.jpg" alt="">
           </div>
 
           <span class="category-name">Cars</span>

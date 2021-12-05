@@ -144,7 +144,7 @@ export default {
           _id: '9733511',
           name: 'Look up',
           artist: 'Aртём H',
-          img: 'images/pexels-артём-н-9733511-min.jpg',
+          img: 'images/pexels-aptem-h-9733511-min.jpg',
           price: '$19.99',
           rating: 4,
           stock: 2,
